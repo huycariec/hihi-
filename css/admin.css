@@ -1,0 +1,357 @@
+/* ---------------admin---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-admin {
+    display: flex;
+    justify-content: flex-start;
+    /*height: 815px;*/
+    height: 100vh;
+    background-color: #f5f5f5;
+
+}
+
+.col-1-admin {
+    width: 300px;
+    background-color: #212529;
+    height: 815px;
+}
+
+.information-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.line-admin {
+    width: 80%;
+    /* Độ dài của đường thẳng */
+    height: 0.5px;
+    /* Độ dày của đường thẳng */
+    background-color: #d3d3d3;
+    /* Màu sắc của đường thẳng */
+    display: inline-block;
+    margin: 0 20px 10px 20px;
+    /* Khoảng cách giữa đường thẳng và tiêu đề */
+    vertical-align: middle;
+    /* Để đường thẳng nằm giữa tiêu đề */
+    margin-top: 30px;
+}
+
+.information-admin>img {
+    width: 70px;
+    border-radius: 100px;
+}
+
+.information-admin>h3 {
+    color: white;
+    margin-top: 15px;
+}
+
+.function-admin ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.function-admin li {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.function-admin i {
+    margin-left: 20px;
+}
+
+.function-admin li:hover {
+    background-color: #ffd43b;
+}
+
+.function-admin li:hover a {
+    color: #161648;
+}
+
+.function-admin a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+
+}
+
+.col-2-admin {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.logout-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.logout {
+    margin-right: 80px;
+    border: none;
+    background-color: #ffd43b;
+    height: 40px;
+    width: 100px;
+    border-radius: 3px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.commodities-container {
+    background-color: #ffffff;
+    margin: 20px 30px 30px 30px;
+}
+
+.function-commodities>button {
+    height: 35px;
+    width: auto;
+    margin: 20px 0 0 30px;
+    border: none;
+    border-radius: 3px;
+}
+
+.function-commodities a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.add-commodities {
+    background-color: #9df99d;
+}
+
+.select-all-commodities {
+    background-color: #bfbeef;
+}
+
+.unchecker-commodities {
+    background-color: #e1ec68;
+}
+
+.delete-all-commodities {
+    background-color: #efc9ca;
+}
+
+.table-commodities {
+    margin: 15px 30px 20px 30px;
+}
+
+.commodities {
+    width: 100%;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    /* Đảm bảo bảng chiếm toàn bộ chiều rộng của container */
+    border-collapse: collapse;
+    /* Gộp các đường viền của ô */
+}
+
+th,
+td {
+    text-align: center;
+    /* Căn giữa theo chiều ngang */
+    vertical-align: middle;
+    /* Căn giữa theo chiều dọc */
+    padding: 10px;
+    /* Khoảng cách lề bên trong của ô */
+    border: 1px solid #ccc;
+    /* Đường viền ô */
+}
+
+.line-commodities {
+    width: 94%;
+    /* Độ dài của đường thẳng */
+    height: 0.5px;
+    /* Độ dày của đường thẳng */
+    background-color: #d3d3d3;
+    /* Màu sắc của đường thẳng */
+    display: inline-block;
+    margin: 0 20px 10px 20px;
+    /* Khoảng cách giữa đường thẳng và tiêu đề */
+    vertical-align: middle;
+    /* Để đường thẳng nằm giữa tiêu đề */
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#pagination {
+    text-align: right;
+    margin-top: 20px;
+    height: 30px;
+}
+
+#pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#pagination a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#pagination .active {
+    background-color: #333;
+    color: #fff;
+}
+
+.commodities-title {
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+
+}
+
+.commodities-title>h4 {
+    margin-left: 30px;
+}
+
+td>button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.fa-trash-alt {
+    color: #de0400;
+}
+
+.delete {
+    background-color: #F7C3C2;
+}
+
+.fa-edit {
+    color: #BE6568FF;
+}
+
+.edit {
+    background-color: #FBd2c5;
+}
+
+.add {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add>button {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+
+
+}
+
+.add a {
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.add .btn-add {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    width: 70px;
+
+}
+
+.btn-add {
+    background-color: #9df99d;
+}
+
+.btn-list {
+    background-color: #bfbeef;
+}
+
+td>input {
+    width: 100%;
+    height: 30px;
+}
+
+.radio {
+    display: flex;
+}
+
+.radio>label {
+    padding: 15px;
+}
+
+.btn-green {
+    background-color: #9df99d;
+}
+
+.btn-red {
+    background-color: #FF8484FF;
+}
+
+.select-option {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.input-select {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 30px 0 0;
+}
+
+.input-select button {
+    margin-left: 10px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    padding: 1.5px;
+}
+
+.purchase-button {
+    width: 120px;
+}
